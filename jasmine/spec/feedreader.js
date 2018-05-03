@@ -54,8 +54,9 @@ $(function() {
          * hidden by default.
          */
          it('is hidden by default', function() {
-            let elem = document.querySelector('body');
-            expect(elem.className).toBe('menu-hidden');
+            //let elem = document.querySelector('body');
+            //expect(elem.className).toBe('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true); //modify due udacity review
          });
 
          /* This test ensures the menu changes
@@ -64,12 +65,14 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
           it('changes visibility', function() {
-            let elem = document.querySelector('body');
+            //let elem = document.querySelector('body');
             let menu = document.querySelector('.menu-icon-link');
             menu.click();
-            expect(elem.className).toBe('');
+            //expect(elem.className).toBe('');
+            expect($('body').hasClass('menu-hidden')).toBe(false); //modify due udacity review
             menu.click();
-            expect(elem.className).toBe('menu-hidden');
+            //expect(elem.className).toBe('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true); //modify due udacity review
           });
     });
 

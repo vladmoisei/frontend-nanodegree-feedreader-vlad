@@ -30,4 +30,11 @@ The starting source code was cloned from: Original [Project assets](http://githu
 
 ## Acces to project
 
-* [Link to Project](https://vladmoisei.github.io/frontend-nanodegree-feedreader-vlad/)
+Clone or download this repository, then open _index.html_ in your browser after starting a simple web server.
+
+The easiest way is to use SimpleHTTPServer if you already have Python installed (it comes pre-installed on most Mac OS X and Linux computers). In a terminal window, change directory into the downloaded directory and run the following command:
+
+`python -m SimpleHTTPServer`
+
+After it starts, you can navigate to http://0.0.0.0:8000/index.html in your internet browser.
+
